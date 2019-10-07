@@ -1,6 +1,6 @@
 const h = new Headers();
 
-let BASE_URL = !process.env.NODE_ENV ?  "http://localhost:7000/api" : "/api"
+const BASE_URL = !process.env.NODE_ENV ? "http://localhost:7000/api" : "/api";
 
 const token = localStorage.getItem("token");
 h.append("Content-type", "application/json");
